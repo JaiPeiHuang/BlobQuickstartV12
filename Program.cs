@@ -44,7 +44,7 @@ namespace BlobQuickstartV12
             await File.WriteAllTextAsync(localFilePath, "Hello, World!");
 
             // Get a reference to a blob
-            BlobClient blobClient = containerClient.get(fileName);
+            BlobClient blobClient = containerClient.GetBlobClient(fileName);
 
 
             Console.WriteLine("Uploading to Blob storage as blob:\n\t {0}\n", blobClient.Uri);
